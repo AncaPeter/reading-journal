@@ -1,3 +1,22 @@
-<h2>{{book.name}} Details</h2>
-<div><span>id: </span>{{book.id}}</div>
-<div><span>name: </span>{{book.name | uppercase}}</div>
+<h2>Read Books</h2>
+<ul class="books">
+  <li *ngFor="let book of books">
+    <button type="button" (click)="onSelect(book)">
+      <!--<span class="badge">{{book.id}} </span>-->
+      <span class="title"><b>{{book.title}}</b> by {{book.author}}</span>
+    </button>
+  </li>
+</ul>
+<div *ngIf="selectedBook">
+  <h3>{{selectedBook.title | uppercase}} Details</h3>
+  <div>Series Name: {{selectedBook.seriesName}}</div><br>
+  <div>Id: {{selectedBook.id}}</div><br>
+  <div>
+    <label for="hero-title">Book title: </label>
+    <input id="hero-title" [(ngModel)]="selectedBook.title" placeholder="title">
+  </div><br>
+  <div>
+    <label for="hero-author">Book author: </label>
+    <input id="hero-author" [(ngModel)]="selectedBook.author" placeholder="author">
+  </div><br>
+</div>
