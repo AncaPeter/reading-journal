@@ -8,12 +8,10 @@ import { BookService } from '../book.service';
   styleUrls: ['./books.component.scss']
 })
 export class BooksComponent implements OnInit {
-  book: Book = {
-    id: 1,
-    name: 'Regatul spinilor si al trandafirilor'
-  };
+  books = BOOKS;
+  selectedBook?: Book;
 
-  constructor(private bookService: BookService) {}
+  constructor(private bookService: BookService) { }
 
   getBooks(): void {
     this.books = this.bookService.getBooks();
