@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from '../book';
+import { BookService } from '../book.service';
 
 @Component({
   selector: 'app-books',
@@ -12,9 +13,15 @@ export class BooksComponent implements OnInit {
     name: 'Regatul spinilor si al trandafirilor'
   };
 
-  constructor() { }
+  constructor(private bookService: BookService) {}
 
+  getBooks(): void {
+    this.books = this.bookService.getBooks();
+  }
   ngOnInit(): void {
   }
 
-}
+  onSelect(book: Book): void {
+    this.selectedBook = book;
+  }
+};
