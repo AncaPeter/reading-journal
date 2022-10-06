@@ -2,7 +2,10 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\src\\app"
+    "\\src\\app",
+    "\\src\\app\\book-detail",
+    "\\src\\app\\books"
   ],
+  "SelectedNode": "\\src\\app\\books\\books.component.scss",
   "PreviewInSolutionExplorer": false
 }

@@ -1,7 +1,7 @@
 <div *ngIf="book">
   <h3>{{book.title | uppercase}} Book Details</h3>
   <div>Series Name: {{book.seriesName}}</div><br>
-                                             <div>Id: {{book.id}}</div><br>
+  <div>Id: {{book.id}}</div><br>
   <div>
     <label for="book-title">Book title: </label>
     <input id="book-title" [(ngModel)]="book.title" placeholder="title">

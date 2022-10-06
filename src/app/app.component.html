@@ -1,3 +1,24 @@
+<head><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"></head>
 <h1>{{title}}</h1>
-<app-books></app-books>
-<app-messages></app-messages>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <nav>
+        <a routerLink=""><h3>Home</h3></a>
+      </nav>
+    </div>
+    <div class="col-sm">
+      <nav>
+        <a routerLink="/read-books"><h3>Read Books</h3></a>
+      </nav>
+    </div>
+    <div class="col-sm">
+      <nav>
+        <a routerLink="/trending-books"><h3>Trending Books</h3></a>
+      </nav>
+    </div>
+    <router-outlet></router-outlet>
+    <app-messages></app-messages>
+  </div>
+</div>
+
