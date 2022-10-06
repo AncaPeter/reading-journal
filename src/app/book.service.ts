@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Book } from './book';
-import { BOOKS } from './mock-books';
+import { BOOKS, TrendingBooks } from './mock-books';
 import { MessageService } from './message.service';
 
 @Injectable({
@@ -12,6 +12,11 @@ export class BookService {
     const books = of(BOOKS);
     this.messageService.add('BookService: fetched books');
     return books;
+  }
+
+  getTrendingBooks(): Observable<Book[]> {
+    const trendingbooks = of(TrendingBooks);
+    return trendingbooks;
   }
   constructor(private messageService: MessageService) { }
 }

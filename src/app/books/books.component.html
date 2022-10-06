@@ -1,4 +1,3 @@
-<h2>Read Books</h2>
 <ul class="books">
   <li *ngFor="let book of books">
     <button [class.selected]="book === selectedBook" type="button" (click)="onSelect(book)">
