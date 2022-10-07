@@ -1,7 +1,7 @@
+<span class="initText">Here you are a list of your read books:</span>
 <ul class="books">
   <li *ngFor="let book of books">
-    <button [class.selected]="book === selectedBook" type="button" (click)="onSelect(book)">
-      <!--<span class="badge">{{book.id}} </span>-->
+    <button id="bookItem" [class.selected]="book === selectedBook" type="button" (click)="onSelect(book)">
       <span class="title"><b>{{book.title}}</b> by {{book.author}}</span>
     </button>
   </li>

@@ -15,9 +15,8 @@ books button {
   position: relative;
   left: 0;
   background-color: #EEE;
-  margin: .5em;
-  padding: 0;
-  border-radius: 4px;
+  margin: 5px;
+  border-radius: 7px;
   display: flex;
   align-items: stretch;
   height: 1.8em;
@@ -49,17 +48,28 @@ books button.selected:active {
   color: white;
 }
 
+.initText {
+  color: #901010;
+  font-size: 25px;
+  font-family: cursive;
+}
+
 books .badge {
   display: inline-block;
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
   background-color: #405061;
-  line-height: 1em;
+  line-height: 20em;
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
 
 books .name {
   align-self: center;
+}
+
+#bookItem {
+  margin: 5px;
+  background-color: #eac0f7;
 }
