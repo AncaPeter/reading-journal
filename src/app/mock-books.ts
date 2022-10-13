@@ -1,16 +1,16 @@
 import { Book } from './book';
 
 export const BOOKS: Book[] = [
-  { id: 11, title: 'A Court of Thorns and Roses', author: 'Sarah J. Maas', seriesName: 'A Court of Thorns and Roses' },
-  { id: 12, title: 'A Court of Mist and Fury', author: 'Sarah J. Maas', seriesName: 'A Court of Thorns and Roses' },
-  { id: 13, title: 'A Court of Wings and Ruin', author: 'Sarah J. Maas', seriesName: 'A Court of Thorns and Roses' },
-  { id: 14, title: 'A Court of Frost and Starlight', author: 'Sarah J. Maas', seriesName: 'A Court of Thorns and Roses'},
-  { id: 15, title: 'A ​Court of Silver Flames', author: 'Sarah J. Maas', seriesName: 'A Court of Thorns and Roses' },
-  { id: 16, title: 'Defy', author: 'L.J. Shen', seriesName: 'Sinners of Saint' },
-  { id: 17, title: 'Vicious', author: 'L.J. Shen', seriesName: 'Sinners of Saint' },
-  { id: 18, title: 'Ruckus', author: 'L.J. Shen', seriesName: 'Sinners of Saint' },
-  { id: 19, title: 'Scandalous', author: 'L.J. Shen', seriesName: 'Sinners of Saint' },
-  { id: 20, title: 'Bane', author: 'L.J. Shen', seriesName: 'Sinners of Saint' }
+  { id: 11, title: 'A Court of Thorns and Roses', author: 'Sarah J. Maas', seriesName: 'A Court of Thorns and Roses', nrOfPages: 419, publicationDate: new Date("02 June 2020")},
+  { id: 12, title: 'A Court of Mist and Fury', author: 'Sarah J. Maas', seriesName: 'A Court of Thorns and Roses', nrOfPages: 624, publicationDate: new Date("02 June 2020")},
+  { id: 13, title: 'A Court of Wings and Ruin', author: 'Sarah J. Maas', seriesName: 'A Court of Thorns and Roses', nrOfPages: 699, publicationDate: new Date("02 June 2020")},
+  { id: 14, title: 'A Court of Frost and Starlight', author: 'Sarah J. Maas', seriesName: 'A Court of Thorns and Roses', nrOfPages: 272, publicationDate: new Date("02 June 2020")},
+  { id: 15, title: 'A ​Court of Silver Flames', author: 'Sarah J. Maas', seriesName: 'A Court of Thorns and Roses', nrOfPages: 757, publicationDate: new Date("16 February 2021")},
+  { id: 16, title: 'Defy', author: 'L.J. Shen', seriesName: 'Sinners of Saint', nrOfPages: 165, publicationDate: new Date("31 January 2017")},
+  { id: 17, title: 'Vicious', author: 'L.J. Shen', seriesName: 'Sinners of Saint', nrOfPages: 372, publicationDate: new Date("27 December 2016")},
+  { id: 18, title: 'Ruckus', author: 'L.J. Shen', seriesName: 'Sinners of Saint', nrOfPages: 369, publicationDate: new Date("23 May 2017")},
+  { id: 19, title: 'Scandalous', author: 'L.J. Shen', seriesName: 'Sinners of Saint', nrOfPages: 315, publicationDate: new Date("21 September 2017")},
+  { id: 20, title: 'Bane', author: 'L.J. Shen', seriesName: 'Sinners of Saint', nrOfPages: 354, publicationDate: new Date("10 May 2018")}
 ];
 
 export const TrendingBooks: Book[] = [

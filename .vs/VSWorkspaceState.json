@@ -4,8 +4,12 @@
     "\\src",
     "\\src\\app",
     "\\src\\app\\book-detail",
-    "\\src\\app\\books"
+    "\\src\\app\\books",
+    "\\src\\app\\messages",
+    "\\src\\app\\trending-books",
+    "\\src\\assets",
+    "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\books\\books.component.scss",
+  "SelectedNode": "\\src\\app\\message.service.ts",
   "PreviewInSolutionExplorer": false
 }

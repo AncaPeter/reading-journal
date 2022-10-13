@@ -1,10 +1,21 @@
-<ul class="books">
-  <li *ngFor="let book of books">
-    <button [class.selected]="book === selectedBook" type="button" (click)="onSelect(book)">
-      <!--<span class="badge">{{book.id}} </span>-->
-      <span class="title"><b>{{book.title}}</b> by {{book.author}}</span>
-    </button>
-  </li>
-</ul>
-<app-book-detail [book]="selectedBook"></app-book-detail>
-
+<div class="row">
+  <div class="col">
+    <span class="initText">Here you have a list of your read books:</span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-6">
+    <ul class="books">
+      <li *ngFor="let book of books">
+        <button id="bookItem" [class.selected]="book === selectedBook" type="button" (click)="onSelect(book)">
+          <span class="title"><b>{{book.title}}</b> by {{book.author}}</span>
+        </button>
+      </li>
+    </ul>
+  </div>
+  <div class="col-6">
+    <div id="bookDetail">
+      <app-book-detail [book]="selectedBook"></app-book-detail>
+    </div>
+  </div>
+</div>

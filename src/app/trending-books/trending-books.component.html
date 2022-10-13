@@ -1,7 +1,10 @@
-<div id="books" *ngFor="let book of books" >
-  <ul>
-    <li>
-      <span class="title"><b>{{book.title}}</b> by {{book.author}}</span>
-    </li>
-  </ul>
+<span class="initText">Here you have a list of trending books 2022:</span>
+<div id="booksBlock">
+  <div id="books" *ngFor="let book of books">
+    <ul>
+      <li>
+        <span class="title"><b>{{book.title}}</b> by {{book.author}}</span>
+      </li>
+    </ul>
+  </div>
 </div>
