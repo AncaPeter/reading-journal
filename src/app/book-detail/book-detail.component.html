@@ -1,13 +1,15 @@
 <div *ngIf="book">
-  <h3>{{book.title | uppercase}} Book Details</h3>
-  <div>Series Name: {{book.seriesName}}</div><br>
-  <div>Id: {{book.id}}</div><br>
+  <h5>{{book.title}} - Book Details</h5>
+  <div><span id="labelName">Series Name:</span> {{book.seriesName}}</div>
+  <div><span id="labelName">Id:</span> {{book.id}}</div>
   <div>
-    <label for="book-title">Book title: </label>
+    <label for="book-title"><span id="labelName">Book title:</span></label>
     <input id="book-title" [(ngModel)]="book.title" placeholder="title">
-  </div><br>
+  </div>
   <div>
-    <label for="book-author">Book author: </label>
+    <label for="book-author"><span id="labelName">Book author:</span></label>
     <input id="book-author" [(ngModel)]="book.author" placeholder="author">
-  </div><br>
+  </div>
+  <div><span id="labelName">Nr. of pages:</span> {{book.nrOfPages}}</div>
+  <div><span id="labelName">Publication date/year:</span> {{book.publicationDate | date: "dd.MM.YYYY"}}</div>
 </div>

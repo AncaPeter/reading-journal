@@ -3,4 +3,6 @@ export interface Book {
   title: string;
   author: string,
   seriesName?: string,
+  nrOfPages?: number,
+  publicationDate?: Date
 }
